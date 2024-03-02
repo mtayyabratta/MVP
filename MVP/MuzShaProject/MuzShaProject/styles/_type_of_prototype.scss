@@ -1,0 +1,81 @@
+.text {
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  a {
+    text-decoration: none;
+    color: $cardCaption-color;
+  }
+  h1 {
+    color: $title-color;
+    font-size: 33px;
+    letter-spacing: -0.5px;
+    margin-bottom: 28.05px;
+    font-weight: 800;
+  }
+  p {
+    color: $subtitle-color;
+    font-size: 17 px;
+    line-height: 27.2px;
+    letter-spacing: 0.4px;
+  }
+}
+
+.prototype-cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+
+  .prototype-card {
+    background-color: white;
+    height: 200px;
+    width: 267px;
+    text-align: center;
+    border: 1px solid rgba(28, 31, 62, 0.09);
+    position: relative;
+    box-shadow: 0 6px 3px rgb(36 25 171 / 11%);
+    border-radius: 4px;
+    &:hover {
+      transition: all 0.1s ease;
+      background: #e8ecff;
+      border: 1px solid #c1c6ec;
+    }
+
+    &:active {
+      background-color: #e8ecff;
+    }
+    .prototype-card-img-mob {
+      position: absolute;
+      top: 36px;
+      left: 93px;
+      height: 65px;
+      width: 90px;
+    }
+
+    .prototype-card-img-web {
+      position: absolute;
+      height: 72px;
+      width: 90px;
+      top: 36px;
+      left: 87px;
+    }
+
+    .prototype-card-caption {
+      position: absolute;
+      top: 148px;
+      left: 113px;
+      display: block;
+      color: $cardCaption-color;
+      font-weight: bolder;
+    }
+    .last {
+      left: 86px;
+    }
+    .mob-2 {
+      position: absolute;
+      top: 47px;
+      left: 134px;
+      height: 62px;
+    }
+  }
+}
